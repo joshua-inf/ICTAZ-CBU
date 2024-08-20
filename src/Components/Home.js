@@ -1,23 +1,31 @@
 import Carousel from "./HomeComp/Carasel"
-import { FaHandsPraying } from "react-icons/fa6";
+import { FaArrowRight, FaHandsPraying } from "react-icons/fa6";
 import { BsFillMortarboardFill } from "react-icons/bs";
 import { TbBulb } from "react-icons/tb";
 import image from '../Images/3837.jpg'
+import './Home.css'
 import image1 from '../Images/robots.jpg'
-import image3 from '../Images/isictaz.jpg'
-import image2 from '../Images/desktop-shape-cta-right-1.svg'
+import image3 from '../Images/5668.jpg'
+import image2 from '../Images/138060.jpg'
+import image4 from '../Images/90811.jpg'
+import { useState } from "react";
 
 const Home = () => {
+    const [color, setColor] = useState(false)
+
     const CardComp = (props) => {
         return (
             <>
-                <div className="col-12 col-md-4 my-4 text-white">
-                    <div className="text-center">
+                <div className='col-12 col-md-4 p-2' >
+                    <div className="text-center p-2 rounded-2 cardcomp border" style={{ cursor:'pointer'}}>
                         {props.Icon}
                         <h4 className="text-center">{props.Title}</h4>
-                        <p className="text-center">
+                        <p className="text-center" style={{fontSize:'12px'}}>
                             {props.Content}
                         </p>
+                        <div className="">
+                        <FaArrowRight className="arrow" size={30}  />
+                        </div>
                     </div>
                 </div>
             </>
@@ -27,7 +35,7 @@ const Home = () => {
         return (
             <>
                 <div className="p-2">
-                    <div className="rounded p-1" style={{ width: '250px', backgroundColor: 'rgba(255,255,255,0.5)' }}>
+                    <div className="rounded border-danger p-1" style={{ width: '250px', backgroundColor: 'rgba(255,255,255,0.5)' }}>
                         <div className="fw-bold fs-5 my-3 text-center">
                             {props.Title}
                         </div>
@@ -62,7 +70,7 @@ const Home = () => {
         <>
             <div style={{ minHeight: "100vh", marginTop: '60px' }}>
                 <Carousel />
-                <div className="d-flex " style={{ minHeight: '60vh', alignItems: 'center', background:'rgba(21, 84, 154)' }}>
+                <div className="d-flex " style={{paddingBlock:'50px', alignItems: 'center'}}>
                     <div className="p-4">
                         <div className="row">
                             <div className="col-1">
@@ -93,47 +101,68 @@ const Home = () => {
 
 
                 </div>
-                <div className="d-flex p-4 py-5" style={{ minHeight: '100vh', background: `url(${image}) fixed center no-repeat `, alignItems: "center", backgroundSize: 'cover' }}>
+                <div className="" style={{ overflow:'hidden' }}>
                     <div>
-                        <div className="display-4 fw-bolder text-white text-center mb-3">Get Involved!!!</div>
-                        <div className="d-flex justify-content-center" style={{ flexWrap:'wrap'}}>
-                            <Card2Comp 
-                            Title="Workshops and Tutorials"
-                            Content=" Regular sessions focusing on specific programming languages, tools, and technologies. These workshops often range from beginner to advanced levels"
-                            />
-                            <Card2Comp 
-                            Title="Hackathons and Coding Competitions"
-                            Content=" Events where members collaborate intensively on projects or compete in coding challenges to solve problems within a limited timeframe"
-                            />
-                            <Card2Comp 
-                            Title="Guest Lectures and Talks"
-                            Content="Inviting industry professionals, researchers, or alumni to speak on topics ranging from software development trends to career advice in tech"
-                            />
-                            <Card2Comp 
-                            Title="Project Development"
-                            Content="Providing opportunities for members to work on real-world projects, either independently or in teams, to apply their programming skills to solve practical problems"
-                            />
-                            <Card2Comp 
-                            Title="Technical Skill-building Sessions"
-                            Content="Hands-on sessions focusing on specific technical skills such as web development, mobile app development, data analysis, machine learning, etc"
-                            />
-                            <Card2Comp 
-                            Title="Peer Learning and Code Reviews"
-                            Content="Organizing sessions where members can review each other's code, share knowledge, and provide constructive feedback to improve coding practices"
-                            />
-                            <Card2Comp 
-                            Title="Career Development Workshops"
-                            Content="Workshops focused on resume building, interview preparation, networking skills, and understanding industry expectations in tech careers"
-                            />
-                            <Card2Comp 
-                            Title="Open Source Contributions"
-                            Content="Encouraging members to contribute to open-source projects, thereby gaining practical experience and collaborating with developers globally"
-                            />
+                        <div className="row p-5" >
+                            <div className="col-12 col-md-6" style={{background:`url(${image3}) center`, backgroundSize:'cover', minHeight:'350px'}}>
+                            </div>
+                            <div className="col-12 p-3 col-md-6 ">
+                                <div className="d-flex flex-column h-100 justify-content-center" style={{width:'80%'}}>
+                                    <div>
+                                        <h3>Looking for a UQ expert?</h3>
+                                        <p>
+                                        We have experts across over 1,000 specialisations. Find a UQ researcher, PhD supervisor or media expert by searching UQ Experts.
+                                        </p>
+                                        <button className="btn rounded-0 btn-info btn-lg">Reach out</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div style={{minHeight:'100vh', background:`url(${image2}) right no-repeat`, backgroundSize:'cover'}} className="py-5 p-3">
+                <div className="" style={{ overflow:'hidden' }}>
+                    <div>
+                        <div className="row p-5" >
+                            <div className="col-12 p-3 order-md-1 order-2 col-md-6 ">
+                                <div className="d-flex flex-column h-100 justify-content-center" style={{width:'80%'}}>
+                                    <div>
+                                        <h3>Get Exposed!!</h3>
+                                        <p>
+                                        Unlock new opportunities by diving into cutting-edge technology. Stay ahead of the curve, enhance your skills, and connect with innovators. Embrace the future—get exposed to the latest in tech today!
+                                        </p>
+                                        <button className="btn btn-info rounded-0 btn-lg">Reach out</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-12 order-md-2 order-1 col-md-6" style={{background:`url(${image2}) center`, backgroundSize:'cover', minHeight:'350px'}}>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <div className="" style={{ overflow:'hidden' }}>
+                    <div>
+                        <div className="row p-5" >
+                            <div className="col-12 col-md-6" style={{background:`url(${image4}) center`, backgroundSize:'cover', minHeight:'350px'}}>
+                            </div>
+                            <div className="col-12 p-3 col-md-6 ">
+                                <div className="d-flex flex-column h-100 justify-content-center" style={{width:'80%'}}>
+                                    <div>
+                                        <h3>Make a Difference</h3>
+                                        <p>
+                                        Step into the world of innovation and make your mark. Discover cutting-edge technologies, develop new skills, and be part of solutions that drive change. Get exposed to tech that makes a difference!
+                                        </p>
+                                        <button className="btn rounded-0 btn-info btn-lg">Get started!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <div style={{minHeight:'100vh', background:`url(${image2}) right no-repeat`, backgroundSize:'cover'}} className="py-5 p-3">
                     <h2 className="text-center h1 fw-bolder">FROM THE BLOG</h2>
                     <hr/>
                     <div className="mt-5">
@@ -148,7 +177,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

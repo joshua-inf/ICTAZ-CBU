@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nav from './Navigation/Navbar';
 import Home from './Components/Home';
 import AboutUs from './Components/AboutUs';
+import Blog from './Components/Blogs';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/About" element={<AboutUs />} />
+              <Route path="/Blog" element={<Blog />} />
             </Routes>
           </div>
         </div>

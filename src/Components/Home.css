@@ -1,0 +1,16 @@
+.cardcomp{
+    transition: all ease 0.5s;
+}
+.cardcomp:hover {
+    transition: all ease 0.5s;
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+.cardcomp:hover .arrow {
+    transition: all ease 0.5s;
+    transform: translateX(50%);
+}
+
+.cardcomp .arrow{
+    transition: all ease 0.5s;
+}

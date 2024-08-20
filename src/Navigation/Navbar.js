@@ -50,6 +50,10 @@ const Nav = () => {
                                                     Home
                                                     <div className="line"></div>
                                                 </NavLink>
+                                                <NavLink to='/Blog'>
+                                                    Our Blog
+                                                    <div className="line"></div>
+                                                </NavLink>
                                                 <NavLink to='/About'>
                                                     About Us
                                                     <div className="line"></div>
