@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Nav from './Navigation/Navbar';
+// import Nav from './Navigation/Navbar';
+import Uq from './Navigation/header2';
 import Home from './Components/Home';
 import AboutUs from './Components/AboutUs';
 import Blog from './Components/Blogs';
@@ -11,7 +12,7 @@ function App() {
     <div style={{ height: '100vh' }}>
       <BrowserRouter>
         <div className='d-flex justify-content-between flex-column h-100'>
-          <Nav />
+          <Uq/>
           <div>
             <Routes>
               <Route path="/" element={<Home />} />
