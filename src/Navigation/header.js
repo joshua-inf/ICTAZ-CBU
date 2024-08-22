@@ -68,26 +68,24 @@ function Nav(){
                         </div>                        
                     </div>
                 </div>
-                
-            </header>
-            <div className="hidden fixed mt-[4.0rem] w-full h-full bg-[rgba(21,84,154)] border-t border-[#4089dd] duration-[5000ms]" style={{zIndex : "1"}} id="content">
+                <div className="hidden w-full h-full bg-[rgba(21,84,154)] border-t border-[#4089dd] duration-[5000ms]" style={{zIndex : "1"}} id="content">
                 <div className="h-full">
                     <div className="text-white font-medium text-[22px]">
                         <NavLink to='/'>
-                            <div className="py-10 w-full text-center">Home</div>
+                            <div className="py-4 w-full text-center">Home</div>
                         </NavLink>
                         <NavLink to="/Blog">
-                            <div className="py-10 w-full text-center">Our Blog </div>
+                            <div className="py-4 w-full text-center">Our Blog </div>
                         </NavLink>
                         <NavLink to='/About'>
-                            <div className="py-10 w-full text-center">About Us </div>                                
+                            <div className="py-4 w-full text-center">About Us </div>                                
                         </NavLink>
                         <NavLink to="/Contactus">
-                            <div className="py-10 w-full text-center">Contact Us </div>
+                            <div className="py-4 w-full text-center">Contact Us </div>
                         </NavLink>                        
                         
                     </div>
-                    <div className="w-full bg-[#0b3d77] bottom-0 fixed">
+                    <div className="w-full bg-[#0b3d77] bottom-0">
                         <div className="m-auto bg-transparent">
                             <ul className="flex justify-evenly text-white font-medium items-center text-[24px]">
                                 {/* <li className="px-4 py-2">+260 977885462</li> */}
@@ -100,6 +98,8 @@ function Nav(){
                     </div>
                 </div>
             </div> 
+            </header>
+            
         </>
     )
 }

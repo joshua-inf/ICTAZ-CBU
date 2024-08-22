@@ -15,7 +15,7 @@ const Nav = () => {
         if(!event.target.matches('.dropbtn')) {
             var dropdowns = document.getElementById('nav-custom-link-drop');
             var i; 
-            for(i = 0; i < dropdowns.lengtt; i++) {
+            for(i = 0; i < dropdowns.length; i++) {
                 var openDropdown = dropdowns[i];
                 if(openDropdown.classList.contains('show')){
                     openDropdown.classList.remove('show');
