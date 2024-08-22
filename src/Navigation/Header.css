@@ -1,0 +1,23 @@
+
+.myNAv a {
+    color: white;
+}
+@media screen and (min-width :768px) {
+    .myNAv {
+        display: flex;
+    }
+    
+
+}
+
+
+@media screen and (max-width :768px) {
+    .myNAv {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        /* display: none; */
+        gap: 20px;
+        background-color: rgba(21,84,154);
+    }
+}

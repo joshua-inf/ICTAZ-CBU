@@ -70,3 +70,13 @@
 .hide{
   display: none;
 }
+
+
+header a:hover {
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+header a{
+  transition: 0.5s ease;
+}

@@ -17,9 +17,9 @@ const Home = () => {
         return (
             <>
                 <div className='col-12 col-md-4 p-2' >
-                    <div className="text-center p-2 rounded-2 cardcomp border" style={{ cursor:'pointer'}}>
+                    <div className="p-2 rounded-2 cardcomp border" style={{ cursor:'pointer', minHeight:'250px', alignContent:'center'}}>
                         {props.Icon}
-                        <h4 className="text-center">{props.Title}</h4>
+                        <h4 className="text-center h4">{props.Title}</h4>
                         <p className="text-center" style={{fontSize:'12px'}}>
                             {props.Content}
                         </p>
@@ -109,7 +109,7 @@ const Home = () => {
                             <div className="col-12 p-3 col-md-6 ">
                                 <div className="d-flex flex-column h-100 justify-content-center" style={{width:'80%'}}>
                                     <div>
-                                        <h3>Looking for a UQ expert?</h3>
+                                        <h3 className="h3">Looking for a UQ expert?</h3>
                                         <p>
                                         We have experts across over 1,000 specialisations. Find a UQ researcher, PhD supervisor or media expert by searching UQ Experts.
                                         </p>
@@ -127,7 +127,7 @@ const Home = () => {
                             <div className="col-12 p-3 order-md-1 order-2 col-md-6 ">
                                 <div className="d-flex flex-column h-100 justify-content-center" style={{width:'80%'}}>
                                     <div>
-                                        <h3>Get Exposed!!</h3>
+                                        <h3 className="h3">Get Exposed!!</h3>
                                         <p>
                                         Unlock new opportunities by diving into cutting-edge technology. Stay ahead of the curve, enhance your skills, and connect with innovators. Embrace the future—get exposed to the latest in tech today!
                                         </p>
@@ -150,7 +150,7 @@ const Home = () => {
                             <div className="col-12 p-3 col-md-6 ">
                                 <div className="d-flex flex-column h-100 justify-content-center" style={{width:'80%'}}>
                                     <div>
-                                        <h3>Make a Difference</h3>
+                                        <h3 className="h3">Make a Difference</h3>
                                         <p>
                                         Step into the world of innovation and make your mark. Discover cutting-edge technologies, develop new skills, and be part of solutions that drive change. Get exposed to tech that makes a difference!
                                         </p>
