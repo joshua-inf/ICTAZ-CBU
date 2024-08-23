@@ -19,5 +19,6 @@
         /* display: none; */
         gap: 20px;
         background-color: rgba(21,84,154);
+        /* border-top: 1px gray; */
     }
 }

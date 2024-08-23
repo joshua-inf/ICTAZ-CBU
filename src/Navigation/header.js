@@ -51,7 +51,7 @@ function Nav() {
                 <div className="w-full bg-[rgba(21,84,154)]">
                     <div className=" md:w-4/5 m-auto bg-transparent flex justify-between">
                         <div className="h-12 my-2 md:flex justify-between items-center w-full">
-                            <div className="flex px-3 justify-between ">
+                            <div className="flex px-3 justify-between items-center">
                                 <NavLink to="/">
                                     <img
                                         src={Logo}
@@ -60,7 +60,7 @@ function Nav() {
                                     />
                                 </NavLink>
                                 <div className="md:hidden text-white h-full">
-                                    <button onClick={() => shownav()} className="h-full px-3 py-2 text-lg border border-white rounded"><FaBars /></button>
+                                    <button onClick={() => shownav()} className="h-full px-3 py-[10px] text-lg border border-gray-100 rounded"><FaBars /></button>
                                 </div>
                             </div>
                             {
@@ -87,7 +87,7 @@ function Nav() {
                             </div>
                             }
 
-                            <div id="content" className="d-none p-4 myNAv">
+                            <div id="content" className="d-none p-4 myNAv border-t border-gray-300 mt-2">
                                 <NavLink to='/'>
                                     <button className="px-4 h-full">Home </button>
                                     <div className="line"></div>
@@ -104,7 +104,9 @@ function Nav() {
                                     <button className="px-4 h-full">Contact Us </button>
                                     <div className="line"></div>
                                 </NavLink>
-                            </div>
+                                
+                            </div>                          
+                        
                         </div>
                     </div>
                 </div>
